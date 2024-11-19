@@ -1,0 +1,91 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    text-shadow: 0 0 15px #ff9e00, 0 0 20px #ff9e00;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Coin Generator Form */
+.coin-generator-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+.coin-generator-form input {
+    padding: 12px;
+    margin: 15px 0;
+    width: 80%;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+.coin-generator-form button {
+    padding: 12px 30px;
+    background-color: #ff9e00;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.coin-generator-form button:hover {
+    background-color: #ff6f00;
+}
+
+/* Animation Effects */
+.coin-animation {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: coinAnimation 2s ease-in-out infinite;
+}
+
+@keyframes coinAnimation {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    50% { transform: translate(-50%, -50%) rotate(180deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Result message */
+#coin-result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff9e00;
+}
